@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoorDash Food Delivery & Takeout - From Restaurants Near You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="image/png" sizes="32x32" rel="icon" href="https://cdn.doordash.com/static/img/favicon@2x.ico?dd-nonce">
+</head>
+
+<body>
+    <div class="doordash">
+        <div class="banner">
+
+
+            <div class="logo">
+
+                <img class="logo1" src="images/logo(1).svg">
+                <img class="name" src="images/name.svg" alt="">
+                <img class="desktop" src="images/DoorDash-logo.png" alt="">
+
+            </div>
+
+
+            <div class="signin">
+                <button class="btn1"> Sign In</button>
+                <button class="btn2">Sign Up</button>
+            </div>
+
+            <div class="mobile">
+                <div class="hide">
+                    <!-- <div class="login">Login</div>  -->
+
+                    <button class="login">Login</button>
+                    <button class="openapp">Open App</button>
+                </div>
+                <div class="center">
+                    <div class="logo-mob">
+                        <img class="logo1" src="images/logo(1).svg">
+                        <img class="name" src="images/name.svg" alt="">
+
+                    </div>
+                    <div class="h2">
+                        <h2>Discover restaurants and more near you.</h2>
+                    </div>
+                    <div class="address">
+                        <div class="desktop-tab">
+                            <div class="desktop-form">
+                                <img src="images/loc.svg" alt="">
+                                <input class="enter-addr" id="enter-addr" placeholder="Enter delivery address"
+                                    type="text" />
+                                <button class="search">
+                                    <img class="white" src="images/delivery-arrow.svg" alt="">
+                                    <img class="desktop" src="images/delivery-arrow2.svg" alt="">
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <div class="form-cont">
+                                <img src="images/search.svg" alt="">
+
+                                <input class="enter-addr" id="enter-addr" placeholder="Enter delivery address"
+                                    type="text" />
+                                <!-- <input class="search" id ="searchbar-submit"type="button" value=""/> -->
+
+                                <button class="search">
+                                    <img src="images/delivery-arrow.svg" alt="">
+
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <!-- <div> -->
+                        <!-- <button class="saved" id="saved"> -->
+                        <img src="images/user.svg" alt="">
+                        <span class="desktop-span">Sign in for saved address</span>
+                        <span class="mobile-span">Login</span>
+                        <span class="tab">Signin</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- <header>
+            <div class="doordash">
+                <div class="empty"></div>
+                <div class="top-nav">
+                    <img class="main-logo" src="images/DoorDash-logo.png">
+                </div>
+
+                <div class="nav-right">
+                    <button class="signin"> Sign In</button>
+                    <button class="signup">Sign Up</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="background-img">
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png"
+                alt="">
+            <div class="center">
+                <h2>Discover restaurants and more near you.</h2>
+
+
+                <div class="address">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InN0eWxlc19fU3R5bGVkSW5saW5lU3ZnLXNjLTEybDh2dmktMCBocFZ1aUQiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTAuNTI1NyAyMS4zNTE0TDEyIDIwTDEzLjQ3NDMgMjEuMzUxNEMxMy4wOTU1IDIxLjc2NDcgMTIuNTYwNiAyMiAxMiAyMkMxMS40Mzk0IDIyIDEwLjkwNDUgMjEuNzY0NyAxMC41MjU3IDIxLjM1MTRaTTEzLjI5NDkgMTguNDQ2M0MxMi41NDY0IDE5LjQwMzkgMTIgMjAgMTIgMjBDMTIgMjAgMTEuNDUzNSAxOS40MDM5IDEwLjcwNTEgMTguNDQ2M0M5LjA3OTE5IDE2LjM2NTggNi41IDEyLjU3OTIgNi41IDkuNDkyNDJDNi41IDYuNDU5MDQgOC45NjI0MyA0IDEyIDRDMTUuMDM3NiA0IDE3LjUgNi40NTkwNCAxNy41IDkuNDkyNDJDMTcuNSAxMi41NzkyIDE0LjkyMDggMTYuMzY1OCAxMy4yOTQ5IDE4LjQ0NjNaTTEzLjQ3NDMgMjEuMzUxNEMxMy40NzQzIDIxLjM1MTQgMTMuNDc0MyAyMS4zNTE0IDEyIDIwQzEwLjUyNTcgMjEuMzUxNCAxMC41MjU3IDIxLjM1MTQgMTAuNTI1NyAyMS4zNTE0TDEwLjUyMjcgMjEuMzQ4MkwxMC41MTc3IDIxLjM0MjdMMTAuNTAxOCAyMS4zMjUyTDEwLjQ0NzQgMjEuMjY0N0MxMC40MDE0IDIxLjIxMzMgMTAuMzM2MyAyMS4xMzk4IDEwLjI1NDggMjEuMDQ2MUMxMC4wOTE5IDIwLjg1ODkgOS44NjMwMSAyMC41OTAzIDkuNTkwMDQgMjAuMjU1M0M5LjA0NTg3IDE5LjU4NzMgOC4zMTc2NCAxOC42NDQxIDcuNTg1NjYgMTcuNTQ1NkM2Ljg1NzA1IDE2LjQ1MjIgNi4xMDE1MSAxNS4xNzA0IDUuNTIyNyAxMy44Mjc1QzQuOTUxNjkgMTIuNTAyNiA0LjUgMTAuOTk4NCA0LjUgOS40OTI0MkM0LjUgNS4zNTE4NyA3Ljg2MDQ2IDIgMTIgMkMxNi4xMzk1IDIgMTkuNSA1LjM1MTg3IDE5LjUgOS40OTI0MkMxOS41IDEwLjk5ODQgMTkuMDQ4MyAxMi41MDI2IDE4LjQ3NzMgMTMuODI3NUMxNy44OTg1IDE1LjE3MDQgMTcuMTQyOSAxNi40NTIyIDE2LjQxNDMgMTcuNTQ1NkMxNS42ODI0IDE4LjY0NDEgMTQuOTU0MSAxOS41ODczIDE0LjQxIDIwLjI1NTNDMTQuMTM3IDIwLjU5MDMgMTMuOTA4MSAyMC44NTg5IDEzLjc0NTIgMjEuMDQ2MUMxMy42NjM3IDIxLjEzOTggMTMuNTk4NiAyMS4yMTMzIDEzLjU1MjYgMjEuMjY0N0wxMy40OTgyIDIxLjMyNTJMMTMuNDgyMyAyMS4zNDI3TDEzLjQ3NzMgMjEuMzQ4MkwxMy40NzQzIDIxLjM1MTRaIiBmaWxsPSIjNzY3Njc2Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAxMUMxMi44Mjg0IDExIDEzLjUgMTAuMzI4NCAxMy41IDkuNUMxMy41IDguNjcxNTcgMTIuODI4NCA4IDEyIDhDMTEuMTcxNiA4IDEwLjUgOC42NzE1NyAxMC41IDkuNUMxMC41IDEwLjMyODQgMTEuMTcxNiAxMSAxMiAxMVpNMTIgMTNDMTMuOTMzIDEzIDE1LjUgMTEuNDMzIDE1LjUgOS41QzE1LjUgNy41NjcgMTMuOTMzIDYgMTIgNkMxMC4wNjcgNiA4LjUgNy41NjcgOC41IDkuNUM4LjUgMTEuNDMzIDEwLjA2NyAxMyAxMiAxM1oiIGZpbGw9IiM3Njc2NzYiLz48L3N2Zz4="
+                        alt="">
+                    <input class="enter-addr" id="enter-addr" placeholder="Enter delivery address" type="text" />
+                    <button class="search"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="sav-addr">
+                    <button class="saved" id="saved"><i class="fa-regular fa-user"></i> Sign in for saved
+                        address</button>
+                </div>
+            </div>
+
+        </div> -->
+
+    </div>
+    <!-- main1 -->
+    <div class="section1">
+        <div class="section-padding">
+            <div class="section-content">
+                <div class="card">
+                    <div class="picture">
+                        <img src="https://cdn.doordash.com/media/consumer/home/landing/new/ScootScoot.svg">
+                    </div>
+                    <div class="discript">
+                        <div class="info">
+                            <h2>Become a Dasher</h2>
+                            <h3> As a delive money,you'll make reliable money-working anytime,anywhere</h3>
+                        </div>
+                        <button class="btn">
+                            <span>Start earning</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="picture">
+                        <img src="https://cdn.doordash.com/media/consumer/home/landing/new/Storefront.svg">
+                    </div>
+                    <div class="discript">
+                        <div class="info">
+                            <h2>Become a Partner</h2>
+                            <h3>Grow your buisiness and reach new customers by partnering with us.</h3>
+                        </div>
+                        <button class="btn">
+                            <span>Sign up your store</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="picture">
+                        <img src="https://cdn.doordash.com/media/consumer/home/landing/new/iphone.svg" alt="">
+                    </div>
+                    <div class="discript">
+                        <div class="info">
+                            <h2>Get the best DoorDash experience</h2>
+                            <h3>Experience the best your neighborhood has to offer,all in one app.</h3>
+                        </div>
+                        <button class="btn">
+                            <span>Get the appp</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    </div>
+</body>
+
+</html>

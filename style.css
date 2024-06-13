@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  /* width: 100%; */
+}
+
+@font-face {
+  font-family: "TTnorms-bold";
+  src: url("fonts/TTNorms-Bold.woff2");
+}
+
+@font-face {
+  font-family: "TTnorms-medium";
+  src: url("/fonts/TTNorms-Medium.woff2");
+}
+
+@font-face {
+  font-family: "TTnorms-regular";
+  src: url("fonts/TTNorms-Regular.woff2");
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.doordash {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  background-image: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
+  height: 65.3vh;
+  background-size: cover;
+  overflow: hidden;
+  /* height: 550px; */
+  padding: 0px 8px;
+  flex-flow: column;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+}
+
+/* mobile screen */
+@media screen and (max-width:767px) {
+
+
+  .doordash {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  header {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .desktop-tab {
+    display: none;
+  }
+
+  .banner {
+    height: 550px;
+    /* width: 100%; */
+  }
+
+  .desktop-span {
+    display: none;
+  }
+
+  .signin {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hide {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    /* background-color: aqua; */
+    margin-top: -145px;
+    width: 100%;
+    padding-right: 24px;
+    margin-left: -15px;
+  }
+
+  .hide button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    width: max-content;
+    cursor: pointer;
+    /* transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
+    text-decoration: none;
+    text-align: center;
+    padding: 4.5px 12.5px;
+    /* padding-bottom: 5px; */
+    margin: 0;
+    font-family: "TTnorms-bold" !important;
+    font-size: 15px;
+    line-height: 23px;
+    border: none;
+    border-radius: 18px;
+  }
+
+  .hide .login {
+    background-color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hide .openapp {
+    background-color: rgb(235, 23, 0);
+    color: white;
+    /* padding-left: 12.6px; */
+
+  }
+
+  .center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 129px;
+    align-items: center;
+    gap: 20px;
+    /* margin-left:-10px ; */
+  }
+
+  .logo-mob {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    /* margin-top: 280px; */
+    width: 100%;
+    justify-content: center;
+    gap: 7.4px
+  }
+
+  .logo-mob .logo1 {
+    width: 4.30%;
+    margin-left: 1px;
+
+  }
+
+  .name {
+    margin-top: 1px;
+    width: 15%
+  }
+
+  .h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h2 h2 {
+    max-width: 325px;
+    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: "TTnorms-bold";
+    color: white;
+    /* align-items: center; */
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .form {
+    background-color: white;
+    display: flex;
+    padding: 3.5px;
+    border-radius: 25px;
+    min-height: 40px;
+    width: 347px;
+    justify-content: space-between;
+    /* margin-left: 13px; */
+    margin-top: 2px;
+  }
+
+  .form-cont {
+    display: flex;
+    flex-flow: row;
+    padding-top: px;
+    /* padding-bottom: 4px; */
+    padding-left: 10px;
+    gap: 16px;
+    padding-right: 5px;
+    width: 100%;
+    /* padding: 5px; */
+
+
+  }
+
+  .form img {
+    display: flex;
+    align-items: center;
+    width: 24px
+  }
+
+  .form input {
+    border: none;
+    font-family: "TTnorms-medium" !important;
+    font-size: 16px;
+    line-height: 22px;
+    width: min-content;
+    color: #767676ff;
+    /* margin-left: 10px; */
+  }
+
+  .form button {
+    border: none;
+    background: transparent;
+    /* width: 50px; */
+  }
+
+  .user {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    gap: 4px;
+    padding: 4px 12px;
+    border-radius: 24px;
+    margin-top: -2px;
+  }
+
+  
+  .user span {
+    font-family: "TTnorms-bold" !important;
+    font-size: 13.333px;
+    line-height: 22px;
+  }
+
+  .tab {
+    display: none;
+  }
+  .desktop{
+    display: none;
+  }
+
+/* main1 */
+.section1{
+  max-width: 768px;
+}
+.section-padding{
+  display: flex;
+  flex-flow: column;
+  max-width:100%;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.section-content{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+
+}
+.card{
+  display: flex;
+  width: 100%;
+  min-width: 360px;
+  flex-flow: row;
+  padding: 16px;
+}
+.picture{
+  margin-right: 32px;
+}
+.picture img{
+  height: 124px;
+   width: 124px;
+}
+.discript{
+  display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 250px;
+}
+.info{
+  max-width: 100%;
+}
+.info h2
+}
+
+/* tab screen */
+@media screen and (min-width:758px)  {
+  .doordash {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+.desktop{
+  display: none;
+}
+  .banner {
+    height: 650px;
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    width: 100%;
+    /* justify-content: center; */
+  }
+
+  .logo-mob {
+    display: none;
+  }
+
+  .desktop-span {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  header {
+    background: transparent;
+    display: flex;
+    flex-flow: row;
+    margin-top: -0px;
+    width: 100%;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-top: -185px;
+    width: 100%;
+    min-height: 40px;
+    gap: 8px;
+  }
+
+  .logo .name {
+    width: 112.5px;
+    margin-top: 1px;
+  }
+
+  .logo1 {
+    width: 32px;
+  }
+
+  .signin {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -578px;
+    margin-right: 42px;
+    gap: 8px
+  }
+
+  .signin button {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-family: "TTnorms-bold" !important;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 24px;
+
+  }
+
+  .signin .btn1 {
+    background-color: #eb1700;
+    color: white;
+  }
+
+  .signin .btn2 {
+    background-color: white;
+    color: #505050;
+    padding:8px 11px;
+
+  }
+
+  .h2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h2 h2 {
+    color: white;
+    text-align: center;
+    max-width: 750px;
+    font-family: "TTnorms-bold";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+
+  }
+
+  .center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 199px;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+  .form {
+    display: none;
+  }
+
+  .desktop-tab {
+    background-color: white;
+    display: flex;
+    padding: 3.5px;
+    border-radius: 25px;
+    /* min-height: 40px; */
+    height: 48px;
+    min-width: 392px;
+    width: 100%;
+    justify-content: space-between;
+    /* margin-left: 13px; */
+    margin-top: 2px;
+    border-radius: 32px;
+  }
+
+  .desktop-form {
+    width: 100%;
+    display: flex;
+    /* min-height: 40px; */
+    padding: 8px 8px 8px 4px;
+    /* max-width: 100%; */
+    margin-left: 12px;
+    gap: 10px;
+  }
+
+  .desktop-form img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px
+  }
+
+  .desktop-form input {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0ch;
+    font-weight: 500;
+    border: none;
+    font-family: "TTnorms-medium";
+    color: #767676ff;
+
+  }
+.desktop-form button{
+  width: 100%;
+  direction: flex;
+  justify-content: flex-end;
+   border:none;
+   background: transparent;
+   margin-left: 58px;
+
+}
+.desktop-form button img{
+  /* margin-left: 58px; */
+} 
+  .user {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    gap: 4px;
+    padding: 4px 12px;
+    border-radius: 24px;
+    margin-top: -2px;
+  }
+
+  /* .user button{
+    border: none;
+    background: transparent;
+    
+  } */
+  .user span {
+    font-family: "TTnorms-bold" !important;
+    font-size: 13.333px;
+    line-height: 22px;
+  }
+
+  .mobile-span {
+    display: none;
+  }
+}
+
+
+/* @media screen and (min-width:768px) and(max-width:204px) {
+  .mobile {
+    display: none;
+  }
+} */
+@media screen and (min-width:960px) {
+  .tab{
+    display: none;
+  }
+  .user{
+    width:180px;
+  }
+  .desktop-span{
+    display: flex;
+    width: max-content;
+  }
+  .logo{
+    width: 100%;
+  }
+  .logo1{
+    display: none;
+}
+.name{
+  display: none;
+}
+  .desktop{
+    display: flex;
+    /* width: 100%; */
+    /* min-height: 24px; */
+    width: 222.5px;
+    height: max-content;
+
+  }
+}
+
+
+@media screen  and (min-width:1183px){
+  .desktop-form button{
+    background-color: #eb1700;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    /* padding: 8px; */
+    /* padding: 5px 5px 5px 5px; */
+  }
+  .desktop-form img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    /* padding: 8px; */
+
+  }
+ .desktop-form .white{
+    /* display: none; */
+  }
+
+}
