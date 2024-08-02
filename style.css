@@ -2053,8 +2053,8 @@ footer{
   margin-top: 1px;
 }
 .mid-footer{
-  padding-top: 33px;
-  margin-top: 5px;
+  padding-top: 28px;
+  margin-top: 4px;
 
 }
 .lower-footer{
@@ -2491,11 +2491,12 @@ footer{
   }
 
   .mid-footer {
-    padding-top: 18px;
+    padding-top: 24px;
   }
 
   .lower-footer {
     padding-top: 22px;
+    padding-bottom: 33px;
   }
 
   .for-padding {
@@ -2584,4 +2585,30 @@ footer{
     width: fit-content;
     padding-right: 2px;
   }
+  .footer{
+    /* heighpx; */
+  }
+  .link {
+    margin-left: 0px;
+  }
+  .lower-footer {
+    padding-bottom: 30px !important;
+    margin-top: 1px;
+  }
+  .top-footer{
+    padding-top: 31px;
+
+  }
+  .hidden{
+    gap: 4px;
+  }
+  #mid-catogory2 {
+    /* width: max-content; */
+  }
+  #mid-catogory3{
+    left: 2.5px; 
+    position: relative;
+  }
+
+
 }
