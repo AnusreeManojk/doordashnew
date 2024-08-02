@@ -148,10 +148,7 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 7.3px;
-  /* background-color: aqua; */
-  /* margin-top: -145px; */
   width: 100%;
-  /* padding-right4px; */
   margin-left: -31px;
   height: max-content;
   position: absolute;
@@ -262,14 +259,9 @@ header {
   line-height: 28px;
   font-family: "TTnorms-bold";
   color: white;
-  /* align-items: center; */
   text-align: center;
   font-weight: 400;
 
-}
-
-.address {
-  /* margin-top: 2px; */
 }
 
 .form {
@@ -280,8 +272,6 @@ header {
   min-height: 40px;
   width: 347px;
   justify-content: space-between;
-  /* margin-left: 13px; */
-  /* padding-top: 2px; */
   margin-top: 6px;
 }
 
